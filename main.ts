@@ -1,5 +1,5 @@
 basic.forever(function () {
     radio.setGroup(1)
-    radio.setTransmitPower(1)
-    radio.setFrequencyBand(10)
+    radio.setTransmitPower(6)
+    radio.setFrequencyBand(80)
 })
