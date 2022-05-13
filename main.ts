@@ -7,13 +7,16 @@ input.onButtonPressed(Button.AB, function () {
 input.onButtonPressed(Button.B, function () {
     radio.sendNumber(2)
 })
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    radio.sendNumber(3)
+})
 basic.forever(function () {
     radio.setGroup(1)
     basic.showLeds(`
-        # # . . .
-        # . # . .
-        # . # . .
-        # # . . .
-        # . # . .
+        # # # # .
+        # . . # .
+        # # # . .
+        # . . # .
+        # . . # .
         `)
 })
